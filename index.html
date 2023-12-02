@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="buttonStyle.css">
+        <script src="main.js"></script>
         <title>Wave function collapse algorithm</title>
     </head>
     
@@ -97,7 +99,19 @@
             </div>
         </article>
         <footer>
-            <div class="container">
+            <div class="slide-container">
+                <img id="slide" src="assets/slide1.jpg">
+                <div class="button-container">
+                    <button class="button" onclick="prevSlide()">Prev</button>
+                    <button class="button" onclick="nextSlide()">Next</button>
+                </div>
+                <div class="slide-number-container">
+                    <button class="button" onclick="showSlideN(1)">1</button>
+                    <button class="button" onclick="showSlideN(2)">2</button>
+                    <button class="button" onclick="showSlideN(3)">3</button>
+                    <button class="button" onclick="showSlideN(4)">4</button>
+                    <button class="button" onclick="showSlideN(5)">5</button>
+                </div>
             </div>
         </footer>
     </body>
