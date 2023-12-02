@@ -3,13 +3,35 @@
     position: relative;
 }
 
+.button-container {
+    margin: 5px;
+}
+
+
 .button {
     padding: 10px 20px;
     background-color: #25384a;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 6px;
+    font-size: 20px;
     cursor: pointer;
     margin: 0 5px;
+}
+
+
+.button:hover {
+    background-color: white;
+    color: #25384a;
+}
+
+
+
+
+#slide {
+    height: 500px;
+    width: auto;
+    border: 5px solid #25384a;
+    border-radius: 10px;
+    overflow: hidden;
 }

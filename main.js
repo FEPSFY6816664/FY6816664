@@ -21,5 +21,3 @@ function showSlideN(slideNumber){
     currentSlide = slideNumber - 1;
     showSlide();
 }
-
-showSlide();
