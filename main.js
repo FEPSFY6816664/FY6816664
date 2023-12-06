@@ -1,4 +1,4 @@
-var slideimages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"];
+var slideimages = ["slide1.jpg", "slide2.gif", "slide3.gif", "slide4.jpg", "slide5.gif"];
 var currentSlide = 0;
 
 function showSlide(){

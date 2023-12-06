@@ -1,118 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="buttonStyle.css">
-        <script src="main.js"></script>
-        <title>Wave function collapse algorithm</title>
-    </head>
-    
-    <body>
-        <header>
-            <div class="container">
-                <img class="container-image" src="assets/WebBanner2023.png" alt="Surrey Uni banner">
-                <div class="overlay">
-                    <div class="text">
-                        ENG0018 Computer Laboratory 2023/24
-                        Student URN: 6816664
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="buttonStyle.css">
+    <script src="main.js"></script>
+    <title>Wave function collapse algorithm</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="container-image" src="assets/WebBanner2023.png" alt="Surrey Uni banner">
+            <div class="overlay">
+                <div class="text">
+                    ENG0018 Computer Laboratory 2023/24
+                    Student URN: 6816664
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-<!-- start of article content -->
-        <article>
-            <div class="container">
+    <!-- start of article content -->
+    <article>
+        <div class="container">
 
-                <!-- Title -->
-                <h1>Boids Flocking Algorithm and Unique Applications</h1>
+            <!-- Title -->
+            <h1>Boids Flocking Algorithm and Unique Applications</h1>
 
-                <div class="upperContainer">
+            <div class="upperContainer">
 
-                    <!-- Table of contents -->
-                    <table>
-                        <tr>
-                            <th>Table of contents</th>
-                        </tr>
-                        <tr>
-                            <td><a href="#Abstract">Abstract</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#Introduction">Introduction</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#Article">Article</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#References">Refrences</a></td>
-                        </tr>
-                    </table>
-
-                    <!-- Abstract -->
-                    <div class="abstract">
-                        <h2 id="Abstract">Abstract</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>    
-                    </div>
-                </div>
-
-                <!-- introduction -->
-                <h2 id="Introduction">Introduction</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <!-- Article -->
-                <h2 id="Article">Article</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
-                <!-- Refrences -->
-                <h2 id="References">References</h2>
-                <table class="refrences">
+                <!-- Table of contents -->
+                <table>
+                    <tr>
+                        <th>Table of contents</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#Abstract">Abstract</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Introduction">Introduction</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Article">Article</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#References">Refrences</a></td>
+                    </tr>
                 </table>
 
-
-                <!-- Quote example -->
-                <blockquote>
+                <!-- Abstract -->
+                <div class="abstract">
+                    <h2 id="Abstract">Abstract</h2>
                     <p>
-                        quote goes here
-                    </p>   
-                    <footer>
-                        -- Who said it, 
-                        <cite>
-                            <a href="https://www.google.com">Link to webpage</a>
-                        </cite>
-                    </footer>
-                </blockquote>
+                        This article delves into the Wave Function Collapse (WFC) algorithm, drawing inspiration from
+                        quantum mechanics for procedural content generation. Utilizing the concept of superposition,
+                        each map cell is considered a superposition of potential tiles, with entropy guiding collapsed
+                        states. Constraints, like Sudoku rules, establish interdependencies. The algorithm initializes
+                        in an unobserved state, mirroring quantum principles, collapsing cells into singular values.
+                        When applied to map generation, the WFC algorithm manipulates tile sets to craft seamless
+                        landscapes by eliminating incompatible possibilities. Despite a time, complexity drawback, its
+                        reliability proves valuable for game designers in procedural content generation. The WFC
+                        algorithm emerges as a versatile and powerful tool in creative procedural content generation for
+                        game design, showing malleability and efficiency across varying scenarios, from character
+                        textures to entire maps.
+                    </p>
+                </div>
             </div>
-        </article>
 
-        <footer>
-            <div class="slide-container">
-                <img id="slide" src="assets/slide1.jpg" alt="visual aids">
-                <div class="button-container">
-                    <button class="button" onclick="prevSlide()" type="button">Prev</button>
-                    <button class="button" onclick="nextSlide()" type="button">Next</button>
-                </div>
-                <div class="slide-number-container">
-                    <button class="button" onclick="showSlideN(1)" type="button">1</button>
-                    <button class="button" onclick="showSlideN(2)" type="button">2</button>
-                    <button class="button" onclick="showSlideN(3)" type="button">3</button>
-                    <button class="button" onclick="showSlideN(4)" type="button">4</button>
-                    <button class="button" onclick="showSlideN(5)" type="button">5</button>
-                </div>
+            <!-- introduction -->
+            <h2 id="Introduction">Introduction</h2>
+            <p>
+                In this article I would like to adventure through the process and uses of the wave function collapse
+                algorithm. The way it works is seemingly simple yet inspired by quantum mechanics and the idea that one
+                object can exist in multiple states simultaneously, will bring forward the true strength of the method.
+            </p>
+
+            <!-- Article -->
+            <h2 id="Article">Article</h2>
+            <p>
+                “Superposition is something that happens in quantum mechanics which … means that this map currently
+                exists as every possible map imaginable from the randomly assembled maps all the way to the seamless
+                cohesive maps” – <a href="https://www.youtube.com/watch?v=Xe_7b9pRKY8">Jabrils (2020)</a> Minecraft, But
+                On a Quantum Computer. 17 Oct 2020. (Accessed: 27 Nov 2023).
+            </p>
+            <p>
+                Jabrils perfectly summarises the idea that a superposition allows every state to exist simultaneously.
+                We use this idea to allow every cell in the map to exist as every tile and pick and choose the tiles we
+                either don’t want to allow to exist or tiles that we do. The number of possible values that we give a
+                cell we can call the entropy of the cell. This will be useful to determine which cells have collapsed to
+                one value, by simply looking at the cell’s entropy. The way that we can make the cells dependent on each
+                other is by using constraints. Constraints can be described using a sudoku for example, a sudoku has
+                rules, these rules help us infer the value of a cell by what matches the rules. In sudoku you cannot
+                have the same value in the same “row”, “column” or “box”.
+            </p>
+            <p>
+                In mxgmn’s github repository, after preparing the tile set we are told to “Initialize the wave in the
+                completely unobserved state” – <a href="https://github.com/mxgmn/WaveFunctionCollapse#algorithm">maxum
+                    gumin (2023)</a>. this is a more ‘quantum
+                mechanics’ oriented way to say we want to see the empty cells as merely unset truth. According to our
+                knowledge of superpositions, an empty sudoku board exists as every permutation of the sudoku, both
+                correct and incorrect complete boards. With a mini sudoku there are 4^16 possible boards and only 288
+                that are correct.
+            </p>
+            <img src="assets/superpos.png" alt="fig 1">
+            <p>
+                By finding the correct values for the cell, we must collapse a cell to a single value, “the idea of
+                collapse in the context of entropy is to collapse all the possible states down into one, remove all the
+                entropy from a single variable of the system” –- <a
+                    href="https://www.youtube.com/watch?v=rI_y2GAlQFM&t=241s">the coding train (2022)</a>. , this is
+                simply done by picking a cell
+                and determining its value from one of its possibilities. Great, so now we have a sudoku with one value,
+                how does this help? Well, we now must apply our constraints. As we know our rules dictate that we cannot
+                allow the same value to exist in the same “row”, “column” or “box”. Hence, we remove any ‘bad’
+                possibilities from any cells that are affected. This reduces the entropy of the cells in the same “row”,
+                “column”, or “box” from 4 to 3 because we have removed one value from all those cells. We have also
+                managed to reduce the number of possibilities to 4^15. Next, if we collapse a cell of lowest entropy
+                (greater than 1) then we can repeat this process until we have a result that is a complete sudoku! The
+                process can be represented by the flowchart in the figure below.
+            </p>
+            <img src="assets/flowchart.png" alt="figure 2">
+            <p>
+                So, how does this help us with our map generation? Well, we now have the algorithm that we want to
+                follow to approach a result that we want. Let’s start with our tiles. Our set of tiles we will use for
+                this example uses 4 different tiles, as shown below. As you can see, all of the tile’s edges will
+                have one of 2 kinds of edges, either road or grass. This allows us to define the constraints we need. We
+                only want edges that match to be kept as a possibility to make this a seamless map. So, when we collapse
+                a cell in this case, we will remove any possibility of a non-matching neighbour cell, leaving only
+                seamless possible tiles, letting us then collapse those cells and repeat!
+            </p>
+            <img src="assets/tiles.png" alt="figure 3">
+            <img src="assets/seamlessmap.png" alt="figure 4">
+            <p>
+                However, there is one downside. It’s the algorithms time complexity, without optimisation, the algorithm
+                takes exponentially longer to complete with more tiles and larger dimensions. The big O notation for
+                this is O(hwn) where h = height, w = width and n is the number of tiles. This is due to having to loop
+                through every cell on the grid and loop through every tile to see which tiles are possible for each of
+                the neighbouring cell’s possibilities. As you can see the amount of looping makes the processing time
+                extremely long relative to other procedurally generated terrain methods. However, with optimisations
+                such as memoization, we a can store the result for repeated calculations with the same parameters.
+            </p>
+            <img src="assets/Simulation.gif" alt="">
+            <p>
+                Nevertheless, the method itself is robust and reliable. “We propose a PCG (procedural content
+                generation) generation method that is friendly to game designers by introducing a WFC (wave function
+                collapse) technique that is widely used in texture synthesis.” -- <a
+                    href="https://www.jstage.jst.go.jp/article/transinf/E103.D/8/E103.D_2019EDP7295/_pdf/-char/en">Hwanhee
+                    KIM, Teasung HAHN, Sookyun
+                    KIM, Shinjin KANG (2020)</a> Despite its speed, it can be extremely useful for game designers to use
+                in a wide variety of
+                ways, from making textures for characters on the spot to vary design yet maintain style to generating
+                entire maps that can be fabricated in the background.
+            </p>
+
+            <!-- Refrences -->
+            <h2 id="References">References</h2>
+            <table class="refrences" style="width: 90%;">
+                <tr>
+                    <td>
+                        Jabrils (2020) Minecraft, But On a Quantum Computer. 17 Oct 2020. Available at: <a
+                            href="https://www.youtube.com/watch?v=Xe_7b9pRKY8">
+                            https://www.youtube.com/watch?v=Xe_7b9pRKY8</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        maxum gumin (2023). ‘WaveFunctionCollapse’, Available at:
+                        <a
+                            href="https://github.com/mxgmn/WaveFunctionCollapse#algorithm">https://github.com/mxgmn/WaveFunctionCollapse#algorithm</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The Coding Train (2022). Coding Challenge 171: Wave Function Collapse. 3 jul 2022. Available at:
+                        <a
+                            href="https://www.youtube.com/watch?v=rI_y2GAlQFM&t=241s">https://www.youtube.com/watch?v=rI_y2GAlQFM&t=241s</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hwanhee KIM, Teasung HAHN, Sookyun KIM, Shinjin KANG (2020) 'Graph Based Wave Function Collapse
+                        Algorithm for Procedural Content Generation in Games', Page 1. Available at: <a
+                            href="https://www.jstage.jst.go.jp/article/transinf/E103.D/8/E103.D_2019EDP7295/_pdf/-char/en">https://www.jstage.jst.go.jp/article/transinf/E103.D/8/E103.D_2019EDP7295/_pdf/-char/en</a>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </article>
+
+    <footer>
+        <div class="slide-container">
+            <img id="slide" src="assets/slide0.jpg" alt="visual aids">
+            <div class="button-container">
+                <button class="button" onclick="prevSlide()" type="button">Prev</button>
+                <button class="button" onclick="nextSlide()" type="button">Next</button>
             </div>
-        </footer>
-    </body>
+            <div class="slide-number-container">
+                <button class="button" onclick="showSlideN(1)" type="button">1</button>
+                <button class="button" onclick="showSlideN(2)" type="button">2</button>
+                <button class="button" onclick="showSlideN(3)" type="button">3</button>
+                <button class="button" onclick="showSlideN(4)" type="button">4</button>
+                <button class="button" onclick="showSlideN(5)" type="button">5</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
